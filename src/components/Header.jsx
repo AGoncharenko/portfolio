@@ -11,7 +11,7 @@ function Header() {
         </div>
         <div className="header-contact">
           <p>
-            <a href="https://www.linkedin.com/in/andrew-goncharenko-040b487b/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/andrew-g-040b487b/" target="_blank" rel="noopener noreferrer">
               <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
             </a>
           </p>
