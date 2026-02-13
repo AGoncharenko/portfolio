@@ -1,4 +1,5 @@
 import { getYearsExperience } from "../helpers/experience";
+import linkedinIcon from "/linkedin.svg";
 
 function Header() {
   return (
@@ -11,7 +12,7 @@ function Header() {
         <div className="header-contact">
           <p>
             <a href="https://www.linkedin.com/in/andrew-goncharenko-040b487b/" target="_blank" rel="noopener noreferrer">
-              <img src="/linkedin.svg" alt="LinkedIn" className="social-icon" />
+              <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
             </a>
           </p>
           <p>
