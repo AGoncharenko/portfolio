@@ -229,13 +229,15 @@ section h2 {
   .main-content {
     grid-template-columns: 1fr;
     padding: 1.5rem;
-  }
-
-  .right-column {
-    order: -1;
+    gap: 0;
   }
 
   .experience-header {
     flex-direction: column;
+  }
+
+  .experience-item:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }

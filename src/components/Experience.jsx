@@ -1,5 +1,18 @@
 const experiences = [
   {
+    company: "Secureframe, Inc.",
+    location: "Remote",
+    title: "Software Engineer",
+    period: "04/2025 - 01/2026",
+    highlights: [
+      "Played a key role in shaping backend architecture for a Custom Data Platform, designing scalable data pipelines, schemas, and external APIs.",
+      "Drove integration strategy by extending the Integration Builder to support complex APIs (e.g., Microsoft Azure Cloud, Google Workspace, Datadog) and future platform growth.",
+      "Navigated ambiguous requirements by guiding technical direction, refactoring systems, and aligning solutions with business goals.",
+      "Influenced cross-team execution through early technical scoping, architecture alignment, and clear communication.",
+      "Improved platform reliability and developer velocity by addressing technical debt, promoting reusable patterns, and mentoring teammates."
+    ],
+  },
+  {
     company: "Clearbox Decisions inc",
     location: "Remote",
     title: "Staff Software Engineer/Architect",

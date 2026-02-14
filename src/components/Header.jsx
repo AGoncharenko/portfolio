@@ -7,7 +7,8 @@ function Header() {
       <div className="header-content">
         <div className="header-main">
           <h1>Andriy Goncharenko</h1>
-          <p className="title">Sr. Software Engineer ({getYearsExperience()}+ years experience)</p>
+          <p className="title">Software Engineer</p>
+          <p>{getYearsExperience()}+ years experience</p>
         </div>
         <div className="header-contact">
           <p>
