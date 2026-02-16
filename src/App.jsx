@@ -27,7 +27,6 @@ function App() {
   if (geoStatus === "blocked") {
     return (
       <div className="geo-blocked">
-        <p>This page is only available in the United States.</p>
       </div>
     );
   }
