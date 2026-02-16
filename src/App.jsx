@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Summary from "./components/Summary";
 import Experience from "./components/Experience";
@@ -6,6 +7,31 @@ import Education from "./components/Education";
 import "./App.css";
 
 function App() {
+  const [geoStatus, setGeoStatus] = useState("loading");
+
+  useEffect(() => {
+    fetch("https://api.country.is")
+      .then((res) => res.json())
+      .then((data) => {
+        setGeoStatus(data.country === "US" ? "allowed" : "blocked");
+      })
+      .catch(() => {
+        setGeoStatus("allowed");
+      });
+  }, []);
+
+  if (geoStatus === "loading") {
+    return null;
+  }
+
+  if (geoStatus === "blocked") {
+    return (
+      <div className="geo-blocked">
+        <p>This page is only available in the United States.</p>
+      </div>
+    );
+  }
+
   return (
     <div className="app">
       <Header />

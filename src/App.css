@@ -211,6 +211,16 @@ section h2 {
   margin-top: 0.5rem;
 }
 
+/* Geo-blocked */
+.geo-blocked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+}
+
 /* Footer */
 .footer {
   background-color: var(--color-primary-dark);
